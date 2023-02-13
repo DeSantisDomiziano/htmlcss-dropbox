@@ -79,8 +79,12 @@ img {
 }
 
 /* SPAZI */
-.p3 {
-    padding: 8rem 2rem;
+.p1 {
+    padding: 8rem 2rem 3rem;
+}
+
+.p2 {
+    padding: 3rem 2rem;    
 }
 
 
@@ -110,18 +114,36 @@ img {
 }
 
 /* BOTTONE */
+.btn,
+.btn-empty {
+    padding: 0.5rem 1rem;
+    transition: 0.5s ease 0s;
+    text-align: center;
+    border-radius: 1rem;
+
+}
+
 .btn {
     color: var(--d-lighter);
     background-color: var(--d-button);
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
-    text-align: center;
     transition: 0.5s ease 0s;
 }
 
 .btn:hover {
     box-shadow: inset 0 0 0 6px #5b9aff;
   }
+
+.btn-empty {
+    display: block;
+    margin-top: 1.5rem;
+    border: 2px solid #a2a2a2;
+    color: #a2a2a2;
+    transition: 0.5s ease 0s;
+}
+
+.btn-empty:hover {
+    box-shadow: inset 0 0 0 6px #e9e9e9;
+}
 
 /* POSITION */
 .p-relative {
@@ -192,10 +214,19 @@ nav .focus {
 
 /* #region main */
 .card > h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
+/* SECTION #BUSINESS */
+#business h2 {
+    font-size: 2.5rem;
+}
+
+#business a {
+    text-decoration: underline;
+    color: var(--d-florida);
+}
 /* #region BOTTONE PIANO MENSILE */
 
 input[type='radio'] {
