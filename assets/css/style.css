@@ -66,6 +66,11 @@ img {
     align-items: center;
 }
 
+.center-vo {
+    align-items: center;
+    justify-content: center;
+}
+
 .end {
     justify-content: end;
 }
@@ -87,6 +92,9 @@ img {
     padding: 3rem 2rem;    
 }
 
+.p3 {
+    padding: 3rem;
+}
 
 /* CONTENITORI */
 .container {
@@ -113,6 +121,10 @@ img {
     width: calc((100% / 12 * 4) - 2rem);
 }
 
+.col-4-full {
+    width: calc(100% / 12 * 4);
+}
+
 /* BOTTONE */
 .btn,
 .btn-empty {
@@ -131,7 +143,7 @@ img {
 
 .btn:hover {
     box-shadow: inset 0 0 0 6px #5b9aff;
-  }
+}
 
 .btn-empty {
     display: block;
@@ -276,7 +288,6 @@ input[type='radio']:checked + span > span {
 
 
 /* STILE CARD PLANS */
-
 #app-main .col-4 > .card{
     margin: 2rem 0;
     border: 1px solid black;
@@ -336,5 +347,90 @@ input[type='radio']:checked + span > span {
     color: var(--d-button);
 }
 
+/* MAIN #TEAM */
+.col-6.d-flex.center-vo.p3 > img {
+    filter: invert(100%);
+}
 
+.col-6.d-flex.center-vo.p3 {
+    aspect-ratio: 1/1;
+} 
+
+
+#team .card-container.p-absolute {
+    top: 0;
+    left: 0;
+}
+
+#team h2 {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.reg {
+    font-size: 1.5rem;
+    top: -30px;
+    left: -20px;
+}
+
+#team .hr {
+    margin: 2rem 0;
+    display: block;
+    width: 15%;
+    border: 1px solid #b4b4b4;
+}
+
+
+#team p {
+    font-weight: 400;
+    margin: 1.5rem 0;
+}
+
+
+/* TEAM ANIMATION */
+.col-6.d-flex.center-vo.p3 {
+    transition: 0.5s ease 0s;
+}
+
+.col-6.d-flex.center-vo.p3:hover {
+    box-shadow: inset 0 0 0 16px #e8e8e8;
+}
+
+/* TEAMS BGCOLOR */
+#teamcard {
+    background-color: var(--d-centersquare);
+}
+
+#designit {
+    background-color: var(--d-designit);
+
+}
+
+#arizona {
+    background-color: var(--d-asu);
+}
+
+#florida {
+    background-color: var(--d-florida);
+}
+
+#topps {
+    background-color: var(--d-topps);
+}
+
+#wbr {
+    background-color: var(--d-wbr);
+}
+
+#lonley {
+    background-color: var(--d-planet);
+}
+
+#hearst {
+    background-color: var(--d-hearts);
+}
+
+#clear {
+    background-color: var(--d-clear);
+}
 /* #endregion main */
