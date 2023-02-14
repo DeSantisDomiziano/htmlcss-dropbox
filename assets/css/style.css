@@ -108,6 +108,10 @@ img {
 }
 
 /* COLONNE */
+.w-20 {
+    width: 20%;
+}
+
 .col-12 {
     width: 100%;
 }
@@ -466,7 +470,7 @@ input[type='radio']:checked + span > span {
 
 /* SECTION DOMANDE E RISPOSTA (Q&A)*/
 #domande-risposta h2{
-    padding: 5rem 0 2rem;
+    padding: 3rem 0;
 }
 
 #domande-risposta .col-12,
@@ -505,7 +509,30 @@ input[type='radio']:checked + span > span {
 
 #app-footer {
     background-color: var(--d-darker);
-    margin-top: 8rem;
+    margin-top: 5rem;
+    color: var(--d-lighter);
 }
 
+#app-footer h3,
+#app-footer li {
+    padding: 0.5rem 0;
+}
+
+#app-footer .w-20 {
+    margin-top: 3rem;
+}
+
+#app-footer a {
+    color: var(--d-lighter);
+}
+
+.w-11 {
+    margin: 3rem 0;
+    width: 11%;
+    border: 1px solid #e9e9e9;
+}
+
+.lingua i {
+    color: white;
+}
 /* #endregion footer */
