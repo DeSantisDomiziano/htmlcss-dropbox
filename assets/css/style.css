@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -432,5 +436,23 @@ input[type='radio']:checked + span > span {
 
 #clear {
     background-color: var(--d-clear);
+}
+
+/* REGION CALL TO ACTION */
+#call-to-action {
+    background-color: var(--d-jumbo);
+}
+
+#call-to-action h2 {
+    color: var(--d-asu);
+    padding: 4rem 1rem 4rem 4rem;
+
+}
+
+#call-to-action a {
+    color: var(--d-darker);
+    padding: 0.5rem 2.2rem;
+    margin-left: 2rem;
+    background-color: var(--d-lighter);
 }
 /* #endregion main */
