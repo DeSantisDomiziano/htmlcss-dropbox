@@ -112,6 +112,10 @@ img {
     width: 100%;
 }
 
+.col-10 {
+    width: calc(100% / 12 * 10);
+}
+
 .col-8 {
     width: calc(100% / 12 * 8);
 }
@@ -127,6 +131,10 @@ img {
 
 .col-4-full {
     width: calc(100% / 12 * 4);
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
 }
 
 /* BOTTONE */
@@ -455,4 +463,49 @@ input[type='radio']:checked + span > span {
     margin-left: 2rem;
     background-color: var(--d-lighter);
 }
+
+/* SECTION DOMANDE E RISPOSTA (Q&A)*/
+#domande-risposta h2{
+    padding: 5rem 0 2rem;
+}
+
+#domande-risposta .col-12,
+#domande-risposta .col-10,
+#domande-risposta .col-2,
+#domande-risposta h2 {
+    border-bottom: 1px solid black;
+}
+
+
+#domande-risposta .col-10 > *,
+#domande-risposta .col-2 > *
+ {
+    padding: 3rem 0;
+}
+
+#domande-risposta .col-12 > * {
+    padding: 1.5rem 0;
+}
+
+#domande-risposta .none {
+    display: none;
+}
+
+#domande-risposta .row:hover .none {
+    display: block !important;
+}
+
+#domande-risposta .row:hover .no-none {
+    display: none;
+}
 /* #endregion main */
+
+
+/* #region footer */
+
+#app-footer {
+    background-color: var(--d-darker);
+    margin-top: 8rem;
+}
+
+/* #endregion footer */
